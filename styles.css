@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+    background: white;
+}
+
+.main {
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+/* ANCHOR FONT */
+
+p.logo,
+ul,
+.p_title,
+p {
+    font-family: "Arial";
+}
+
+/* ANCHOR HEADER */
+
+.nav_container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #55d6aa;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+p.logo {
+    font-size: 200%;
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+}
+ nav ul {
+     list-style: none;
+ }
+
+ nav li {
+     display: inline-block;
+     margin-left: 75px;
+     padding-top: 20px;
+     position: relative;
+     color: black;
+     font-weight: normal;
+ }
+
+ nav a {
+     color: #444;
+     text-decoration: none;
+     text-transform: uppercase;
+ }
+
+ /* ANCHOR  TRANSITION */
+
+ nav a:hover {
+     color: #000;
+ }
+
+ nav a::before {
+     content: '';
+     display: block;
+     height: 5px;
+     width: 0%;
+     background-color: #000;
+     position: absolute;
+     top: 0;
+     transition: all ease-in-out 200ms;
+ }
+
+ nav a:hover::before {
+     width: 100%;
+ }
+
+ /* ANCHOR  HEADER END */
+
+ /* ANCHOR INDEX BODY */ 
+ h1.p_title,
+ p.paragraph {
+     color: black;
+ } 
+h1.p_title {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+p.paragraph {
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 10%;
+    text-align: left;
+    font-size: 18px;
+    width: 50%;
+}
+ img.genghis {
+     position: absolute;
+     margin-top: 3%;
+     margin-left: 68%;
+     height: auto;
+     width: 25%;
+ }
+
+ /* ANCHOR INDEX BODY END */
+
+ /* ANCHOR FOOTER */
+
+footer {
+    background-color: black;
+    position: relative;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+    width: 100%;
+}
+
+footer h2,
+footer a {
+    font-family: "Arial";
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    padding-top: 45px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: #55d6aa;
+}
+
+ /* ANCHOR FOOTER END */
