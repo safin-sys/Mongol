@@ -5,6 +5,10 @@
 
 /* NAV START */
 
+body {
+  background: #F5F5F5;
+}
+
 header {
   height: 95px;
   width: auto;
@@ -31,6 +35,12 @@ h1.logo {
 
 /* MAIN START*/
 
+main.grid_container {
+  display: grid;
+  grid-template-areas: "article"
+  "photo";
+}
+
 h1.title {
   color: #1A2221;
   font-family: "Poppins";
@@ -42,14 +52,14 @@ h1.title {
   padding-bottom: 3%;
 }
 
-img {
+img#foto {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 
-p.caption {
+p#caption {
   font-family: "Poppins";
   font-weight: 200;
   color: #40514E;
@@ -57,7 +67,7 @@ p.caption {
   width: 95%;
 }
 
-p.article {
+p#art1 {
   font-family: "Poppins";
   font-weight: 300;
   color: #40514E;
@@ -68,7 +78,7 @@ p.article {
   padding-top: 2%;
 }
 
-p.article2 {
+p#art2 {
   font-family: "Poppins";
   font-weight: 300;
   color: #40514E;
@@ -102,3 +112,50 @@ a.footerlink {
 }
 
 /*FOOTER END*/
+
+/* DESKTOP START */
+ @media screen and (min-width: 768px) {
+   h1.logo {
+     text-align: left;
+     padding-left: 6%;
+   }
+
+   h1.title {
+     text-align: left;
+     padding-left: 6%;
+     padding-bottom: 0;
+   }
+
+   main.grid_container {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 50% 50% ;
+  }
+
+  .article#art1 {
+    padding-left: 15%;
+    padding-bottom: 2%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .article#art2 {
+    padding-left: 15%;
+    padding-top: 1%; 
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .photo {
+    padding-top: 2%;
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: 25%;
+  }
+
+  .photo#caption {
+    padding-left: 20%;
+    padding-top: 62%;
+ }
+
+/* DESKTOP END */
