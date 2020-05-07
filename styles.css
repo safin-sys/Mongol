@@ -12,7 +12,7 @@ body {
 header {
   height: 95px;
   width: auto;
-  border-bottom: black solid 1px;
+  border-bottom: black solid 2px;
 }
 
 a {
@@ -29,6 +29,53 @@ h1.logo {
   text-align: center;
   line-height: 100px;
   height: 100px;
+}
+
+img.arrow {
+  display: none;
+}
+
+ul {
+  display: none;
+  padding: 0;
+  margin: 0;
+  height: 285px;
+}
+
+li {
+ text-align: center;
+ border-bottom: black solid 2px;
+ height: 95px;
+ position: relative;
+ background: #F5F5F5;
+ line-height: 100px;
+}
+
+li > a.navlinks{
+  list-style: none;
+  color: black;
+  font-family: "Poppins";
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  font-size: 20px;
+}
+
+img.arrow {
+  transform: rotate(90deg);
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  left: 80%;
+  bottom: 80px;
+}
+
+img.arrow:hover {
+  cursor: pointer;
+}
+
+img.arrow::after {
+  transform: rotate(180deg);
 }
 
 /* NAV END */
@@ -115,9 +162,34 @@ a.footerlink {
 
 /* DESKTOP START */
  @media screen and (min-width: 768px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom:black solid 3px;
+    padding: 0 1% 0 6%;
+  }
+
    h1.logo {
      text-align: left;
-     padding-left: 6%;
+   }
+
+   img.arrow {
+     display: none;
+   }
+
+   ul {
+     display: inline;
+   }
+
+   ul > li {
+     display: inline-block;
+     padding: 0 20px;
+     line-height: 100px;
+   }
+
+   li > a.navlinks {
+     display: inline;
    }
 
    h1.title {
@@ -157,5 +229,6 @@ a.footerlink {
     padding-left: 20%;
     padding-top: 62%;
  }
+}
 
 /* DESKTOP END */
