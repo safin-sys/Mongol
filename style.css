@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* NAV START */
+  
+  body {
+    background: #F5F5F5;
+  }
+  
+  header {
+    height: 95px;
+    width: auto;
+    border-bottom: black solid 2px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1.logo {
+    color: #0E153A;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2.7rem;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+  }
+  
+  
+  ul {
+    display: none;
+    padding: 0;
+    margin: 0;
+    height: 285px;
+  }
+  
+  li {
+   text-align: center;
+   border-bottom: black solid 2px;
+   height: 95px;
+   position: relative;
+   background: #F5F5F5;
+   line-height: 100px;
+  }
+  
+  li > a.navlinks{
+    list-style: none;
+    color: black;
+    font-family: "Poppins";
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    font-size: 20px;
+  }
+  
+  img.arrow {
+    transform: rotate(90deg);
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    left: 80%;
+    bottom: 80px;
+  }
+  
+  
+  img.arrow2 {
+    transform: rotate(270deg);
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    left: 85%;
+    bottom: 80px;
+  }
+  
+  img.arrow:hover {
+    cursor: pointer;
+  }
+  
+  img.arrow::after {
+    transform: rotate(180deg);
+  }
+  
+  /* NAV END */
+
+  /*FOOTER START*/
+
+footer {
+    margin-top: 5%;
+    background: #1A2221;
+    width: auto;
+  }
+  
+  p.footertxt {
+    color: #F8FFFD;
+    font-family: "Poppins";
+    text-align: center;
+    font-weight: 700;
+    line-height: 700%;
+  }
+  
+  a.footerlink {
+    color: #F8FFFD;
+  }
+  
+  /*FOOTER END*/
+
+@media screen and (min-width: 768px) {
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom:black solid 3px;
+      padding: 0 1% 0 6%;
+    }
+  
+     h1.logo {
+       text-align: left;
+     }
+  
+     img.arrow {
+       display: none;
+     }
+  
+     ul {
+       display: inline;
+     }
+  
+     ul > li {
+       display: inline-block;
+       padding: 0 20px;
+       line-height: 100px;
+     }
+  
+     li > a.navlinks {
+       display: inline;
+     }
+  
+}
