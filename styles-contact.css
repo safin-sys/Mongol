@@ -1,0 +1,161 @@
+/* MAIN START */
+
+h1.title {
+    color: #1A2221;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 2.7rem;
+    text-align: center;
+    line-height: 90px;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+}
+
+div.desktopnameemail {
+  display: none;
+}
+
+label {
+  display: block;
+  color: black;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+input, textarea {
+  font-family: 'Poppins';
+  border: black 2px solid;
+  width: 75vw;
+  height: 40px;
+  padding: 0 10px;
+  font-size: large;
+  background: #f5f5f5;
+}
+
+textarea {
+  padding: 10px;
+  height: 240px;
+}
+
+input#send {
+  width: 100px;
+  height: 50px;
+  border: none;
+  color: #f8fffd;
+  background-color: #1A2221;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+div.mapbox {
+  width: 80vw;
+  height: 35vh;
+  background-color: #1A2221;
+}
+
+div.mapbox > h1,
+div.mapbox > p {
+  color: #f8fffd;
+  font-family: Poppins;
+  font-style: normal;
+  padding: 5% 0 0 5%;
+}
+
+div.mapbox > h1{
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+div.mapbox > p {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+iframe {
+  width: 80vw;
+  height: 40vh;
+}
+
+/* MAIN END */
+
+/* DESKTOP START */
+
+@media screen and (min-width: 768px) {
+
+  h1.title {
+    text-align: left;
+    padding-left: 6%;
+    padding-bottom: 0;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+    justify-content: stretch;
+  }
+
+  form {
+    padding-left: 12%;
+  }
+
+  div.desktopnameemail,
+  div.desktopnameemail > label {
+    display: inline;
+  }
+
+  div.name,
+  div.email {
+    display: none;
+  }
+  
+  input {
+    width: 43%;
+  }
+  textarea {
+    width: 95%;
+    height: 350px;
+  }
+
+  input.email {
+    position: relative;
+    margin-left: 4%;
+  }
+
+  div.desktopnameemail > label.email {
+    padding-left: 38.5%;
+  }
+
+ 
+  div.mapbox,
+  iframe {
+    margin: -5% 0 0 38%;
+    width: 52%;
+  }
+
+  iframe {
+    height: 55%;
+  }
+
+  div.mapbox > h1 {
+    padding-left: 10%;
+    font-size: 1.3rem;
+  }
+  
+  div.mapbox > p {
+    padding-left: 10%;
+    font-size: 1.1rem;
+  }
+  
+  br.unbr {
+    display: none;
+  }
+
+}
+
+/* DESKTOP END */
