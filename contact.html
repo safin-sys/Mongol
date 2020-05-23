@@ -1,67 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/KxCxx42/Untitled-1.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="styles-contact.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://i.ibb.co/KxCxx42/Untitled-1.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles-contact.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href="index.html"><h1 class="logo">NYC</h1></a>
-        <img class="arrow" src="https://i.ibb.co/bvNggVz/go-to-website-icon-2.png" alt="go-to-website-icon-2" alt="">
-        <nav>
-          <ul>
-            <li><a href="index.html" class="navlinks">Home</a></li>
-            <li><a href="photos.html" class="navlinks">Photos</a></li>
-            <li><a href="contact.html" class="navlinks">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <h1 class="title">Don't Contact Us</h1>
-      <main>
-        <form action="#">
-          <div class="desktopnameemail">
-            <label for="name">Name</label>
-            <label class="email" for="email">Email</label><br>
-            <input type="text" id="name" required>
-            <input class="email" type="email" id="email" required>
-          </div>
-          <div class="name">
-            <label for="name">Name</label>
-            <input type="text" id="name" required>
-          </div><br>
-          <div class="email">
-            <label for="email">Email</label>
-            <input type="email" id="email" required>
-          </div><br>
-          <div class="message">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" required></textarea>
-          </div><br>
-          <div class="submit">
-            <input onclick="alert('This doesn\'t work')" type="submit" value="Send" id="send">
-          </div>
-        </form>
-        <div class="map">
-          <br><br>
-          <div class="mapbox">
-            <h1>Map For Empire State <br>Building
-            </h1>
-            <br class="unbr">
-            <p>
-              20 W 34th St, New York,<br>NY 10001, United States
-            </p>
-          </div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7189.017354617271!2d-73.99039675108972!3d40.74861822983578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sbd!4v1589815345542!5m2!1sen!2sbd" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <a href="index.html"><h1 class="logo">NYC</h1></a>
+      <img
+        class="arrow"
+        src="https://i.ibb.co/bvNggVz/go-to-website-icon-2.png"
+        alt="go-to-website-icon-2"
+        alt=""
+      />
+      <nav>
+        <ul>
+          <li><a href="index.html" class="navlinks">Home</a></li>
+          <li><a href="photos.html" class="navlinks">Photos</a></li>
+          <li><a href="contact.html" class="navlinks">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="title">Don't Contact Us</h1>
+    <main>
+      <form action="#">
+        <div class="desktopnameemail">
+          <label for="name">Name</label>
+          <label class="email" for="email">Email</label><br />
+          <input type="text" id="name" required />
+          <input class="email" type="email" id="email" required />
         </div>
-      </main>
-      <footer>
-        <p class="footertxt">All Rights Not Reserved To <a class="footerlink" href="https://fb.me/SafinTheShip">Safin</a></p>
-      </footer>
-</body>
+        <div class="name">
+          <label for="name">Name</label>
+          <input type="text" id="name" required />
+        </div>
+        <br />
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+        </div>
+        <br />
+        <div class="message">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" required></textarea>
+        </div>
+        <br />
+        <div class="submit">
+          <input
+            onclick="alert('This doesn\'t work')"
+            type="submit"
+            value="Send"
+            id="send"
+          />
+        </div>
+      </form>
+      <div class="map">
+        <br /><br />
+        <div class="mapbox">
+          <h1>Map For Empire State <br />Building</h1>
+          <br class="unbr" />
+          <p>20 W 34th St, New York,<br />NY 10001, United States</p>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7189.017354617271!2d-73.99039675108972!3d40.74861822983578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sbd!4v1589815345542!5m2!1sen!2sbd"
+          width="600"
+          height="400"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </main>
+    <footer>
+      <p class="footertxt">
+        All Rights Not Reserved To
+        <a class="footerlink" href="https://fb.me/SafinTheShip">Safin</a>
+      </p>
+    </footer>
+  </body>
 </html>

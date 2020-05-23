@@ -139,5 +139,9 @@ footer {
      li > a.navlinks {
        display: inline;
      }
+
+     a.navlinks:hover {
+       color: #444;
+     }
   
 }

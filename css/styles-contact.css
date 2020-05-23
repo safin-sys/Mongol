@@ -54,6 +54,10 @@ input#send {
   font-size: 1.3rem;
 }
 
+input#send:hover {
+  cursor: pointer;
+}
+
 div.mapbox {
   width: 80vw;
   height: 35vh;
